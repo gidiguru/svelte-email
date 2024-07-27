@@ -15,6 +15,81 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
+	"files": [
+		"dist",
+		"package.json",
+		"README.md"
+	],
+	"svelte": "./dist/index.js",
+	"main": "./dist/index.js",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		},
+		"./package.json": {
+			"default": "./package.json"
+		},
+		"./components/Body.svelte": {
+			"types": "./dist/components/Body.svelte.d.ts",
+			"svelte": "./dist/components/Body.svelte"
+		},
+		"./components/Column.svelte": {
+			"types": "./dist/components/Column.svelte.d.ts",
+			"svelte": "./dist/components/Column.svelte"
+		},
+		"./components/Container.svelte": {
+			"types": "./dist/components/Container.svelte.d.ts",
+			"svelte": "./dist/components/Container.svelte"
+		},
+		"./components/Head.svelte": {
+			"types": "./dist/components/Head.svelte.d.ts",
+			"svelte": "./dist/components/Head.svelte"
+		},
+		"./components/Heading.svelte": {
+			"types": "./dist/components/Heading.svelte.d.ts",
+			"svelte": "./dist/components/Heading.svelte"
+		},
+		"./components/Hr.svelte": {
+			"types": "./dist/components/Hr.svelte.d.ts",
+			"svelte": "./dist/components/Hr.svelte"
+		},
+		"./components/Html.svelte": {
+			"types": "./dist/components/Html.svelte.d.ts",
+			"svelte": "./dist/components/Html.svelte"
+		},
+		"./components/Img.svelte": {
+			"types": "./dist/components/Img.svelte.d.ts",
+			"svelte": "./dist/components/Img.svelte"
+		},
+		"./components/Link.svelte": {
+			"types": "./dist/components/Link.svelte.d.ts",
+			"svelte": "./dist/components/Link.svelte"
+		},
+		"./components/Preview.svelte": {
+			"types": "./dist/components/Preview.svelte.d.ts",
+			"svelte": "./dist/components/Preview.svelte"
+		},
+		"./components/Section.svelte": {
+			"types": "./dist/components/Section.svelte.d.ts",
+			"svelte": "./dist/components/Section.svelte"
+		},
+		"./components/Text.svelte": {
+			"types": "./dist/components/Text.svelte.d.ts",
+			"svelte": "./dist/components/Text.svelte"
+		},
+		"./render": {
+			"types": "./dist/render.d.ts",
+			"default": "./dist/render.js"
+		},
+		"./utils": {
+			"types": "./dist/utils.d.ts",
+			"default": "./dist/utils.js"
+		}
+	},
+	"peerDependencies": {
+		"@sveltejs/kit": "^1.5.0 || ^2.0.0"
+	},
 	"devDependencies": {
 		"@iconify-json/ri": "^1.1.4",
 		"@sveltejs/adapter-auto": "^2.0.0",
